@@ -1,4 +1,4 @@
-# NNostr
+# Metalog
 A Nostr Relay and Client written in C#
 
 # Client
