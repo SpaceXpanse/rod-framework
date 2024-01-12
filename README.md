@@ -71,7 +71,7 @@ await client.SendEventsAndWaitUntilReceived(new[] {evt}, CancellationToken.None)
 
 
 # Relay
-* Install BTCPay Server through docker deployment https://docs.btcpayserver.org/Docker/#full-installation-for-technical-users
+* Install RODPay Server through docker deployment https://docs.btcpayserver.org/Docker/#full-installation-for-technical-users
 * run the following ssh commands
 ```bash
 cd btcpayserver-docker
