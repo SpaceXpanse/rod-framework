@@ -1,4 +1,4 @@
-# Metalog
+# ROD blockchain framework
 A Nostr Relay and Client written in C#
 
 # Client
