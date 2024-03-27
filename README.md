@@ -1,4 +1,4 @@
-# ROD to Nostrt framework /WIP/
+# ROD to Nostr framework /WIP/
 A Nostr Relay and Client written in C#
 
 # Client
