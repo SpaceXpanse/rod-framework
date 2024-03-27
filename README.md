@@ -105,9 +105,9 @@ Alternatively, you can go to `/Relay`, configure `appsettings.json` and `dotnet 
 ## Configure the relay
 The relay is now running, great! DO NOT SHARE THE URL JUST YET! As there is no UI, one must first connect to the relay using a nostr client, and wait for a Notice event from the relay, that states that the relay is not yet configured and a temporary nostr private key has been created that you can use to configure. Simply login using that key, send a DM to yourself with the message `/admin config` to get the confougration options, and then send it back with `/admin update {CONFIG}`. Please note that the admin key (`AdminKey`) MUST be hex format, not `nsec`.
 
-The BTCPay Server integration uses the BTCPay Server Greenfield API. You can generate a new API key by going to `Account => API Keys`, and the only permissions needed are `CanViewInvoices` and `CanCreateInvoice`.The mandatory ones for payments are `BTCPayServerUri`, `BTCPayServerApiKey`, and `BTCPayServerStoreId`. 
+The RODPay Server integration uses the RODPay Server Greenfield API. You can generate a new API key by going to `Account => API Keys`, and the only permissions needed are `CanViewInvoices` and `CanCreateInvoice`.The mandatory ones for payments are `RODPayServerUri`, `RODPayServerApiKey`, and `RODCPayServerStoreId`. 
 
-Optionally, you can configure BTCPayServer to send a webhook (`Store-Settings->Webhooks`) to `your relay url.com/nostr/btcpay/webhook` for the specific event of `An invoice has been settled`. You are highly recommended to also configure a secret and then to configure it in the relay with `BTCPayServerWebhookSecret` configuration to reduce spam attacks.
+Optionally, you can configure RODPayServer to send a webhook (`Store-Settings->Webhooks`) to `your relay url.com/nostr/rodpay/webhook` for the specific event of `An invoice has been settled`. You are highly recommended to also configure a secret and then to configure it in the relay with `RODPayServerWebhookSecret` configuration to reduce spam attacks.
 ### Payment options
 The relay allows you to charge a fee per event if wanted using the `EventCost` configuration. This is always in sats. You may also configure the relay to make the cost of an event dynamic, to charge based on the size of the event (1byte = eventcost) by setting `EventCostPerByte` to true.
 
