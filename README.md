@@ -1,4 +1,4 @@
-# ROD blockchain framework /WIP/
+# ROD to Nostrt framework /WIP/
 A Nostr Relay and Client written in C#
 
 # Client
